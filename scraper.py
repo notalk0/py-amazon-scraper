@@ -32,6 +32,7 @@ def send_mail():
     server.starttls()
     server.ehlo()
 
+    # https://myaccount.google.com/apppasswords
     server.login('your@gmail.com', 'google-app-password')
 
     subject = 'Price fell down!'
